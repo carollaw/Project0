@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style type="text/css">
+ 
+    .AdvSearchHeader{
+      color: #d93025;
+      font: arial, sans-serf;
+      font-size: 18px;
+      border-bottom: 1px solid grey ;
+    }
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+  }
+  
+    .UpperForm input[type=text]{
+      font-weight: 30;
+      border-color: silver;
+      border-top: groove;
+      border-right-width: 0.1;
+      border-bottom:groove;
+      border-bottom-width: 0.1;
+      padding-bottom: 2mm;
+      width: 450px;
+      height: 15px;
+    }
+    
+
+    .header-container{
+      width: 100%;
+      height: 100%;
+      text-align: right;
+      display: block;
+      padding-right: 5%;
+      margin-bottom: 1cm;
+      }
+      .lists{
+        float: right;
+        margin: 5px;
+        font-size: 15px;
+        display: inline-block;
+      }
+    .AdvSearchButton{
+      background-color:dodgerblue;
+      border: none;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+
+    }
+
+
+  </style>
+
+
+    <head>
+      <title>CS50 - Advanced search</title>
+    </head>
+    <body>
+      <header>
+      <a href="index.html">
+        <img src="Images/GoogleImg.png" alt="" height="30" />
+      </a>
+
+      <div class="header-container">
+        <li class="lists"><a href="index.html">Google Search</a></li>  
+        <li class="lists"><a href="ImageSearch.html">Image Search</a></li>
+          
+      </div>
+ 
+    </p>
+        <title>Advance Search</title>
+      </header>
+    
+    <div class="AdvSearchHeader">
+      Advanced Search
+      <br>
+    </div>
+    
+    <p></p>
+  
+      <div class="UpperFormHeader" style="display: grid; grid-template-columns: 300px 600px auto;">
+        <div class="Find pages">Find pages with...</div>
+        <div class="empty"></div>
+        <div class="to do this">To do this in the search box</div>
+      </div>
+      <p></p>
+      <form action="https://google.com/search" name="f">
+      <div class="UpperForm" style="display: grid; grid-template-columns:300px 600px auto ;">
+
+        <div class="label">all these words</div>
+        <div class="Input" id="all text"><input type="text"  name="as_q"></div>
+        <div class="Explain">Type the important words:tri-colour rat terrier</div>
+        <div class="label">this exact word or phrase:</div>
+        <div class="Input" id="exact text"><input type="text"  name="as_epq"></div>
+        <div class="Explain">Put exact words in quotes: "rat terrier"</div>
+        <div class="label">any of these words:</div>
+        <div class="Input" id="exact text"><input type="text"  name="as_oq"></div>
+        <div class="Explain">Type OR between all the words you want: miniature OR standard</div>
+        <div class="label">none of these words:</div>
+        <div class="Input" id="exact text"><input type="text"  name="as_eq"></div>
+        <div class="Explain">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</div>
+
+      </div>
+      <p></p>
+      <button class="AdvSearchButton"> Advanced Search</button>
+      
+      <!--
+        <input type="submit" value="Advanced Search">
+      </button>
+    -->
+      </form>
+      
+    </body>
+</html>

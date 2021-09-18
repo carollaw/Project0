@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style type="text/css">
+    .head-container{
+      width: 100%;
+      height: 100%;
+      text-align: right;
+      display: block;
+      padding-right: 5%;
+      margin-bottom: 1cm;
+      }
+
+      .lists{
+        float: right;
+        margin: 5px;
+        font-size: 15px;
+        display: inline-block;
+      }
+    .GoogleImage {
+      width: 80mm;
+      height: inherit;
+      margin-top: 25mm;
+    }
+    .form{
+          margin: 0 auto;;
+          width: 510px;
+    }
+
+    .form input[type=text]{
+          display: inline-flex;
+          text-algin: left;
+          float: center;
+          width: 500px;
+          padding: 10px;
+          border: silver;
+          box-shadow:0 0 5px 2px rgba(0,0,0,0.2); 
+          border-radius: 20px;
+          margin-bottom: 12px;
+    }
+   
+  </style>
+
+    <head>
+        <title>CS50 - Google Image Search</title>
+    </head>
+    <body>
+      <!-- #01. Header / Navigation Bar -->
+      <header>
+        <div class="header-container">
+          <li class="lists"><a href="index.html">Search</a></li>
+          <li class="lists"><a href="AdvanceSearch.html">Advance Search</a></li>
+        </div>
+
+        <br>
+      </header>
+
+      <p style="text-align: center;"><img class="GoogleImage" src="Images/GoolgeImagesImg.png" alt="" height="120" /></p>
+
+      <p> </p>
+        <div class="form">
+          <form action="https://www.google.com/search">
+            <div class="input-container">
+              <input type="text" name="q">
+              <input type="hidden" name="source" value="inms">
+              <input type="hidden" name="tbm" value="isch">
+            </div>
+            
+
+            <!--
+            <input type="submit" value="Google Image Search">
+            -->
+            <br>
+        </div>
+    </body>
+
+</html>

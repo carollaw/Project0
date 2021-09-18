@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+      .head-container{
+      width: 100%;
+      height: 100%;
+      text-align: right;
+      display: block;
+      padding-right: 5%;
+      margin-bottom: 1cm;
+      }
+
+      .lists{
+        float: right;
+        margin: 5px;
+        font-size: 15px;
+        display: inline-block;
+      }
+
+      .GoogleLogo img{
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        height:100px;
+        margin-top: 3cm;
+        display: block;
+      }
+      .UserForm input[type=text]{
+        ## -background: url("Images/mic.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        justify-content: center;
+        width: 40%;
+        display: block;
+        margin-left: 30%;
+        margin-right: 30%;
+        padding: 10px;
+        display: inline-block;
+        text-align: left;
+        border:0;
+        box-shadow:0 0 10px 2px rgba(0,0,0,0.2);
+        border-radius: 20px;
+        margin-bottom: 12px;
+      }
+      .Buttonwrapper{
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      .ButtonClass{
+        margin-left: 10px;
+        display:inline-block;
+        cursor: pointer;
+        margin-top: 10px;
+        border-style:none;
+        padding: 10px 5px;
+        font-weight: lighter;
+        border-radius: 5px;
+      }
+
+    </style>
+
+
+<title>CS50 - Google Search</title>
+
+</head>
+<body>
+        <!-- #01. Header / Navigation Bar -->
+  <header>
+    <div class="header-container">
+      <li class="lists"><a href="ImageSearch.html">Image Search</a></li>
+      <li class="lists"><a href="AdvanceSearch.html">Advance Search</a></li>
+    </div>
+    <br>
+  </header>
+
+  <p1>
+  <div class="GoogleLogo">
+      <img src="Images/GoogleImg.png" alt="">
+      <br>
+      <br>
+  </div>
+  </p1>
+
+  <p2>
+      <div class="UserForm">
+          <form action="https://google.com/search" >
+            <input type="text" class="InputText" name="q" ><br>
+            <div class="Buttonwrapper">
+              <input type="submit" class="ButtonClass" value="Google Search" >
+              <input type="button" class="ButtonClass" value="I'm Feeling Lucky" onclick="document.location.href='https:www.google.com/doodles'; ">
+            </div>
+          </form>
+      </div>
+  </p2>
+</body>
+
+</html>
